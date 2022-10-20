@@ -3,8 +3,8 @@
 <body>
 
 <?php
-    $myfile = fopen("logfile.txt", "r") or die("Unable to open file!");
-    echo fread($myfile,filesize("logfile.txt"));
+    $myfile = fopen("/logfile.txt", "r") or die("Unable to open file!");
+    echo fread($myfile,filesize("/logfile.txt"));
     fclose($myfile);
 ?>
 
