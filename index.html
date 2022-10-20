@@ -3,8 +3,8 @@
 <body>
 
 <?php
-    $myfile = fopen("julioaranajr.github.io/logfile.txt", "r") or die("Unable to open file!");
-    echo fread($myfile,filesize("julioaranajr.github.io//logfile.txt"));
+    $myfile = fopen("/julioaranajr.github.io/logfile.txt", "r") or die("Unable to open file!");
+    echo fread($myfile,filesize("/julioaranajr.github.io/logfile.txt"));
     fclose($myfile);
 ?>
 
