@@ -1,41 +1,12 @@
+<!DOCTYPE html>
 <html>
-<title> Ring Number Team1</title>
-<body style="background-color:${color};">
-<script src="/jquery.js" crossorigin="anonymous"></script>
+<body>
 
-<script>
-    $(function() 
-    {
-    $("#button").click( function()
-    {
-        //var TXT_URL = '/julioaranajr/julioaranajr.github.io/logfile.txt';
-            var TXT_URL = $("#input-url").val();
-    $.ajax
-    (
-        {
-            url : TXT_URL,
-		    dataType: "text",
-		    success : function (data) 
-		    {
-            $(".text").html("<pre>"+data+"</pre>");
-		    }
-	    }   
-	    );
-    });
-});
-
-</script>
-
-<h1>" Hello, World !!!</h1>
-    <h2>Logfile.txt display</h2>
-    <h2>This is an example</h2>
-
-    URL where is locate the txt file with the logs:<input type="text" id="input-url" size="50" value="/julioaranajr/julioaranajr.github.io/logfile.txt"></input>
-
-    <input type="button" id="button" value="See Logfile.txt"></input>
-    <div class="text">
-    <hr />
-    <h2>Logfile:</h2>
+<?php
+    $myfile = fopen("logfile.txt", "r") or die("Unable to open file!");
+    echo fread($myfile,filesize("logfile.txt"));
+    fclose($myfile);
+?>
 
 </body>
 </html>
