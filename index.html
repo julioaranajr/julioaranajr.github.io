@@ -1,14 +1,14 @@
 <html>
 <title> Ring Number Team1</title>
 <body style="background-color:${color};">
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="/jquery.js" crossorigin="anonymous"></script>
 
 <script>
     $(function() 
     {
     $("#button").click( function()
     {
-        //var TXT_URL = 'https://www.mozilla.org/media/MPL/2.0/index.815ca599c9df.txt';
+        //var TXT_URL = '/julioaranajr/julioaranajr.github.io/logfile.txt';
             var TXT_URL = $("#input-url").val();
     $.ajax
     (
@@ -30,7 +30,7 @@
     <h2>Logfile.txt display</h2>
     <h2>This is an example</h2>
 
-    URL where is locate the txt file with the logs:<input type="text" id="input-url" size="50" value="https://github.com/julioaranajr/julioaranajr.github.io/blob/main/logfile.txt"></input>
+    URL where is locate the txt file with the logs:<input type="text" id="input-url" size="50" value="/julioaranajr/julioaranajr.github.io/logfile.txt"></input>
 
     <input type="button" id="button" value="See Logfile.txt"></input>
     <div class="text">
