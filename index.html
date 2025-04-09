@@ -1,58 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Julio Arana</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
+    <title>Portafolio</title>
+    <meta
+      name="description"
+      content="Julio Arana Jr. Portfolio"
+    />
 
-<body>
-    <div class="bgimg">
-        <div class="topleft">
-            <p>Julio Arana Jr.</p>
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/me.jpeg"
+              alt="Julio Arana Jr. Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Julio Arana Jr.</span>
         </div>
-        <div class="middle">
-            <h1>COMING SOON</h1>
-            <hr>
-            <p>35 days</p>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a
+                href="./index.html"
+                class="header__link"
+              > Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a
+                href="./index.html#about"
+                class="header__link"
+              >About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a
+                href="./index.html#projects"
+                class="header__link"
+              >
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a
+                href="./index.html#contact"
+                class="header__link"
+              > Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
         </div>
-        <div class="bottomleft">
-            <p>Code in progress</p>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
         </div>
-    </div>
-</body>
-</div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, My name is</h1>
+        <h3 class="heading-primary">Julio Arana Jr.</h3>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            I'm a Cloud Systems Developer.<br>
+            I love learn something new every day and delivery solutions.<br>
+            I've done remote projects, consulted for startups and<br>
+            collaborated with talented people to create<br>
+            digital products and apps for business and consumer use.<br>
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a
+            href="./#projects"
+            class="btn btn--bg"
+          >Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://www.linkedin.com/in/julioarana/"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://github.com/julioaranajr"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://julioaranajr.wixsite.com/index?lang=es"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/www-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://x.com/julioaranajr"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/x-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.instagram.com/julioaranajr/"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section
+      id="about"
+      class="about sec-pad"
+    >
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            <strong> Overview </strong>
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Julio Arana Jr.</strong>
+                and I'm a <strong> Cloud Systems Developer </strong> located in
+                Hamburg - Germany.
+                I've done <strong> remote </strong>
+                projects, consulted for startups, and collaborated
+                with talented people to create
+                <strong>digital products and apps</strong>
+                for both business and consumer use.
+                More than 10 years of experience as IT Consultant, Venezuelan Petroleum Companies, Telecommunications
+                and Medical Software Solutions.
+                <br>
+                <br>
+                Languages: English and Spanish.
+                <br>
+                <br>
+                Feel free to
+                <strong>contact</strong> me here.
+              </p>
+            </div>
+            <a
+              href="./#contact"
+              class="btn btn--med btn--theme dynamicBgClr"
+            >Contact</a>
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Linux</div>
+              <div class="skills__skill">Windows</div>
+              <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">GitLab</div>
+              <div class="skills__skill">GitHubActions</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">GCP</div>
+              <div class="skills__skill">Azure</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">Django</div>
+              <div class="skills__skill">Flask</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Postgres</div>
+              <div class="skills__skill">MySql</div>
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">JS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">jQuery</div>
+              <div class="skills__skill">json</div>
+              <div class="skills__skill">JWT</div>
+              <div class="skills__skill">Heroku</div>
+              <div class="skills__skill">Netlify</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="projects"
+      class="projects sec-pad"
+    >
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            These are some of my projects that I've worked on recently.
+          </span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-1.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 1</h3>
+              <p class="projects__row-content-desc">
+                Final Project - Python Backend Developer's Course on Digital Career Institute GmbH.
+              </p>
+              <p class="projects__row-content-desc">
+                A Social Media platform for Sports.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+              >Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-2.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 2</h3>
+              <p class="projects__row-content-desc">
+                Django Portafolio Application. This is the project allows me to show my skills and projects.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+              >Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-3.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 3</h3>
+              <p class="projects__row-content-desc">
+                AWS Migration Service - This project simulate an On Premise DataCenter migration to AWS.
+              </p>
+              <a
+                href="https://github.com/julioaranajr/corporate_data_center"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+              >Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="contact sec-pad dynamicBg"
+    >
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Please fill out the form below and I'll get back to you as soon as possible.
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form
+            action="#"
+            class="contact__form"
+          >
+            <div class="contact__form-field">
+              <label
+                class="contact__form-label"
+                for="name"
+              >Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label
+                class="contact__form-label"
+                for="email"
+              >Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label
+                class="contact__form-label"
+                for="message"
+              >Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn--theme contact__btn"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/julioarana/"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/julioaranajr"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://julioaranajr.wixsite.com/index?lang=es"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/www-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://x.com/julioaranajr"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/x-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/julioaranajr/"
+              >
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h6 class="heading heading-sm text-lt">Julio Arana Jr.</h6>
+            <p class="main-footer__short-desc">
+              Cloud Systems Developer, Citizen of the world, Warrior of the Light and Promoter of the Universal Culture.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://julioaranajr.wixsite.com/index?lang=es"
+          >Julio Arana Jr.</a>
+        </div>
+      </div>
+    </footer>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    <script src="./index.js"></script>
+  </body>
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
 </html>
